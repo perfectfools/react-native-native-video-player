@@ -5,9 +5,8 @@ import { NativeModules } from 'react-native'
 const { RNVideoPlayer } = NativeModules;
 
 module.exports = {
-
-  showVideoPlayer(url) {
+	...RNVideoPlayer,
+	showVideoPlayer(url) {
     return RNVideoPlayer.showVideoPlayer(url);
   }
 }
-
