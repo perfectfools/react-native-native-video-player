@@ -18,6 +18,13 @@
     "images",
     "player"
   ],
+  "files": [
+    "android",
+    "ios",
+    "index.android.js",
+    "index.ios.js",
+    "react-native-native-video-player.podspec"
+  ],
   "author": "Bond G. Nguyen",
   "license": "WOG",
   "bugs": {
