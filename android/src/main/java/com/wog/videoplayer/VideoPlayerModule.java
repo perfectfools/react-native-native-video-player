@@ -23,7 +23,7 @@ public class VideoPlayerModule extends ReactContextBaseJavaModule implements Act
 
     @Override
     public String getName() {
-        return "VideoPlayerManager";
+        return "RNVideoPlayer";
     }
 
     @ReactMethod

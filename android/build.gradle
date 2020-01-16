@@ -5,12 +5,12 @@ def safeExtGet(prop, fallback) {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 27)
+    compileSdkVersion safeExtGet('compileSdkVersion', 26)
     buildToolsVersion safeExtGet('buildToolsVersion', '27.0.3')
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 27)
+        targetSdkVersion safeExtGet('targetSdkVersion', 26)
         versionCode 1
         versionName "1.0"
     }
@@ -27,6 +27,6 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
 
-    implementation "com.android.support:appcompat-v7:${safeExtGet('supportLibVersion', '27.1.1')}"
+    implementation "com.android.support:appcompat-v7:${safeExtGet('supportLibVersion', '26.0.1')}"
     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
 }
